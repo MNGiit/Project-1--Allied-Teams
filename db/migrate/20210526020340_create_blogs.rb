@@ -2,7 +2,6 @@ class CreateBlogs < ActiveRecord::Migration[6.1]
   def change
     create_table :blogs do |t|
       t.string :author
-      t.date :date
       t.string :title
       t.string :content
 
