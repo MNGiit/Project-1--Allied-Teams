@@ -10,3 +10,9 @@ blog_2 = Blog.create(author: "Programmer", title: "Goodbye world!", content: "Th
 blog_3 = Blog.create(author: "Programmer", title: "Unique Title Goes Here", content: "This is the second post by this author.")
 blog_4 = Blog.create(author: "Developer", title: "Another Blogger", content: "Third author ever to post.")
 blog_5 = Blog.create(author: "Coder", title: "A new blog entry", content: "This is the fifth blog post.")
+
+developer_1 = Developer.create(name: "Bob", hourly_rate: 9.99, title: "Bob's Burgers", jobs: 10)
+developer_2 = Developer.create(name: "Robert", hourly_rate: 0.99, title: "Bob the Builder", jobs: 50)
+developer_3 = Developer.create(name: "Martian", hourly_rate: 0.01, title: "M Developer", jobs: 9001)
+developer_4 = Developer.create(name: "Seesharp", hourly_rate: 49.99, title: "C# Developer", jobs: 1)
+developer_5 = Developer.create(name: "Jabba", hourly_rate: 50.00, title: "Java Developer", jobs: 0)
