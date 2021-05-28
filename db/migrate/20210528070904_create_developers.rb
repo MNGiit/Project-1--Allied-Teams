@@ -4,7 +4,7 @@ class CreateDevelopers < ActiveRecord::Migration[6.1]
       t.string :name
       t.float :hourly_rate
       t.string :title
-      t.int :jobs
+      t.integer :jobs
 
       t.timestamps
     end
