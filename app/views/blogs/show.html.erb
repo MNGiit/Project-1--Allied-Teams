@@ -1,0 +1,8 @@
+<h1>Show Blog Post</h1>
+<% if @blog %>
+  <h2><%= @blog.title %></h2>
+  <h3>By: <%= @blog.author %></h3>
+  <p><%= @blog.content %><p>
+  <% else %>
+    <%= "Didn't find blog post." %>
+<% end %>
