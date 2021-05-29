@@ -1,0 +1,9 @@
+<h1>Show Developer</h1>
+<% if @developer %>
+  <h2><%= @developer.name %></h2>
+  <h2><%= @developer.title %></h2>
+  <h3>Hourly Rate: $<%= @developer.hourly_rate %></h3>
+  <h3>Jobs Completed: <%= @developer.jobs %></h3>
+  <% else %>
+    <%= "Didn't find developer." %>
+<% end %>
