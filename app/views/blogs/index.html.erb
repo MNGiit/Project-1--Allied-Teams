@@ -1,1 +1,8 @@
 <h1>Welcome to Blogs Index</h1>
+<% if @blogs %>
+    <% @blogs.each do |b| %>
+    <p><%= link_to b.title, blog_path(b) %></p>
+    <% end %>
+  <% else %>
+    <%= "Didn't find blog posts." %>
+<% end %>
