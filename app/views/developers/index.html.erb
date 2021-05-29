@@ -1,0 +1,8 @@
+<h1>Welcome to Developers Index</h1>
+<% if @developers %>
+    <% @developers.each do |d| %>
+    <p><%= link_to d.name, developer_path(d) %>, <%= d.title %></p>
+    <% end %>
+  <% else %>
+    <%= "Didn't find developers." %>
+<% end %>
