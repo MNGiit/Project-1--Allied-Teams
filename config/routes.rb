@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get '/', to: 'static#index'
   resources :blogs, only: [:index, :show]
+  resources :developers, only: [:index, :show]
 end
