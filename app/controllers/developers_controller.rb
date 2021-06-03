@@ -15,4 +15,10 @@ class DevelopersController < ApplicationController
     @developer = Developer.create(developer_params)
     # redirect_to @developer
   end
+
+  private
+
+  def developer_params
+    params.require(:developer).permit(:name, :title, :hourly_rate, :jobs)
+  end
 end
