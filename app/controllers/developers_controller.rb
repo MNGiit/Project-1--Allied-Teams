@@ -11,4 +11,8 @@ class DevelopersController < ApplicationController
     @developer = Developer.new
   end
 
+  def create
+    @developer = Developer.create(developer_params)
+    # redirect_to @developer
+  end
 end
