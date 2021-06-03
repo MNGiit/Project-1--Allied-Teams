@@ -8,10 +8,14 @@
   <%= f.text_field :title %><br>
   <!-- Developer Hourly Rate -->
   <%= f.label :hourly_rate %>
-  <%= f.text_field :hourly_rate %><br>
+  <%= f.number_field :hourly_rate %><br>
   <!-- Developer Jobs -->
   <%= f.label :jobs %>
-  <%= f.text_field :jobs %><br>
+  <%= f.number_field :jobs %><br>
   <!-- Submit -->
   <%= f.submit %>
 <% end %>
+t.string :name
+t.float :hourly_rate
+t.string :title
+t.integer :jobs
