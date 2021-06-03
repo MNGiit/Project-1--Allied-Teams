@@ -13,7 +13,7 @@ class DevelopersController < ApplicationController
 
   def create
     @developer = Developer.create(developer_params)
-    # redirect_to @developer
+    redirect_to @developer
   end
 
   private
