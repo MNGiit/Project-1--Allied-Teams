@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
-  resources :blogs, only: [:index, :show]
+  resources :blogs, only: [:index, :show, :new, :create]
   resources :developers, only: [:index, :show, :new, :create]
 end
