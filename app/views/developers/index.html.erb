@@ -1,4 +1,8 @@
 <h1>Welcome to Developers Index</h1>
+<% if session[:user_id] %>
+  <%= link_to "Create Developer", new_developer_path %><br>
+<% end %>
+
 <% if @developers %>
     <% @developers.each do |d| %>
     <p><%= link_to d.name, developer_path(d) %>, <%= d.title %></p>
