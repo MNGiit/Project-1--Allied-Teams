@@ -16,3 +16,7 @@ developer_2 = Developer.create(name: "Robert", hourly_rate: 0.99, title: "Bob th
 developer_3 = Developer.create(name: "Martian", hourly_rate: 0.01, title: "M Developer", jobs: 9001)
 developer_4 = Developer.create(name: "Seesharp", hourly_rate: 49.99, title: "C# Developer", jobs: 1)
 developer_5 = Developer.create(name: "Jabba", hourly_rate: 50.00, title: "Java Developer", jobs: 0)
+
+User.create(email: "esra@alliedteams.com", name: "Esra", password: "password123")
+User.create(email: "elliott@alliedteams.com", name: "Elliott", password: "password123")
+User.create(email: "mohammed@alliedteams.com", name: "Mohammed", password: "password123")

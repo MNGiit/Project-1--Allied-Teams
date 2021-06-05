@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_28_070904) do
+ActiveRecord::Schema.define(version: 2021_06_04_022642) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "author"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 2021_05_28_070904) do
     t.float "hourly_rate"
     t.string "title"
     t.integer "jobs"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "name"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
